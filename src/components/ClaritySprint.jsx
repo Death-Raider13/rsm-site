@@ -1,5 +1,3 @@
-import { whatsappUrl, site } from '../lib/site'
-
 const deliverables = [
   'A clear definition of the outcome',
   'Priorities, owners, and decision points',
@@ -8,8 +6,6 @@ const deliverables = [
 ]
 
 export default function ClaritySprint() {
-  const message = `Hi ${site.name}, I would like to ask about the Delivery Clarity Sprint.`
-
   return (
     <section className="section sprint-section" id="sprint">
       <div className="container">
@@ -19,7 +15,7 @@ export default function ClaritySprint() {
             <p className="sprint-kicker">The Delivery Clarity Sprint</p>
             <h2>A practical path from <em>stuck</em> to in motion.</h2>
             <p className="sprint-description">A focused 7–10 day engagement for important work that has become unclear, delayed, or difficult to coordinate.</p>
-            <a className="button button-cream" href={whatsappUrl(message)} target="_blank" rel="noopener noreferrer">Ask about the sprint <span aria-hidden="true">↗</span></a>
+            <a className="button button-cream" href="/delivery-clarity-sprint">See the sprint details <span aria-hidden="true">↗</span></a>
           </div>
           <div className="sprint-side">
             <div className="sprint-side-label">What you leave with</div>

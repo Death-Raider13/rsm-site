@@ -7,7 +7,9 @@ import Services from './components/Services'
 import Process from './components/Process'
 import Proof from './components/Proof'
 import About from './components/About'
+import Founder from './components/Founder'
 import FAQ from './components/FAQ'
+import SprintPage from './components/SprintPage'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import { site } from './lib/site'
@@ -35,6 +37,10 @@ function useRevealAll() {
 export default function App() {
   const [announcementVisible, setAnnouncementVisible] = useState(true)
   useRevealAll()
+
+  if (window.location.pathname === '/delivery-clarity-sprint') {
+    return <SprintPage />
+  }
 
   return (
     <div className="site-shell">
@@ -64,6 +70,7 @@ export default function App() {
         <Process />
         <Proof />
         <About />
+        <Founder />
         <FAQ />
         <Contact />
       </main>
