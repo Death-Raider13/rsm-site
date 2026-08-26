@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --navy: #0B2F6B;
+  --blue: #1C56C5;
+  --blue-deep: #0a3ba8;
+  --pale-blue: #EAF1FF;
+  --canvas: #FAFBFE;
+  --surface: #FFFFFF;
+  --surface-warm: #F0F5FF;
+  --ink: #182033;
+  --slate: #667085;
+  --line: rgba(11,47,107,0.1);
+  --line-light: rgba(255,255,255,0.12);
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --font-display: 'Manrope', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--canvas);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  min-width: 320px;
+}
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; }
+img { max-width: 100%; display: block; }
+*:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 3px; }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 3px; }
