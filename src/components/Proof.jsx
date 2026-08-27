@@ -1,7 +1,7 @@
 const evidence = [
-  { number: '01', title: 'Method proof', text: 'A clear working system: outcomes, owners, decisions, milestones, and a rhythm for follow-through.' },
-  { number: '02', title: 'Capability proof', text: 'Useful delivery artifacts that show how RSM thinks and what a client can expect to receive.' },
-  { number: '03', title: 'Permission-based proof', text: 'As projects are completed, approved stories and outcomes will be added here without exaggeration.' },
+  { number: '01', title: 'A clear way of working', text: 'We agree on the goal, list the steps, organise the people, and keep track of what needs to happen next.', },
+  { number: '02', title: 'Useful work, not just advice', text: 'You get practical plans, task lists, timelines, and follow-up that help the project move forward.', },
+  { number: '03', title: 'Real results over time', text: 'As we complete projects, we will add client-approved stories that show what changed and what was completed.', },
 ]
 
 export default function Proof() {
@@ -11,8 +11,8 @@ export default function Proof() {
         <div className="proof-layout" data-reveal>
           <div className="proof-intro">
             <div className="eyebrow eyebrow-light"><span className="eyebrow-line" /> Trust, built properly</div>
-            <h2>We are building the evidence <em>in the open.</em></h2>
-            <p>RSM is a new consultancy. We are not going to fill this page with invented numbers or borrowed logos. We will earn credibility through careful work, useful artifacts, and client-approved outcomes.</p>
+            <h2>We show how we work, <em>then let the work speak.</em></h2>
+            <p>RSM is a new consultancy, so we are not going to use made-up numbers or logos that do not belong to us. We build trust by being clear about the work, creating useful plans, and delivering what we agree to do.</p>
             <a className="text-link text-link-light" href="#contact">Start with a conversation <span aria-hidden="true">↗</span></a>
           </div>
           <div className="evidence-stack">
@@ -23,7 +23,7 @@ export default function Proof() {
                 <span className="evidence-mark" aria-hidden="true">↗</span>
               </article>
             ))}
-            <div className="evidence-footer"><span className="evidence-pulse" /> No fabricated metrics. No borrowed trust. Just real delivery.</div>
+            <div className="evidence-footer"><span className="evidence-pulse" /> No made-up numbers. Just clear work and honest follow-up.</div>
           </div>
         </div>
       </div>

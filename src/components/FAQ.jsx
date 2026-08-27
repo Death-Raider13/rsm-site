@@ -2,20 +2,20 @@ import { useState } from 'react'
 
 const questions = [
   {
-    question: 'What does the first conversation cover?',
-    answer: 'We will understand what you are trying to move, what is currently getting in the way, and whether a Delivery Clarity Sprint or another engagement is the right fit. It is a working conversation, not a sales performance.',
+    question: 'What happens when I contact RSM?',
+    answer: 'We talk about what you are trying to do, what is getting in the way, and what kind of help would be useful. You do not need a perfect plan before you contact us.',
   },
   {
-    question: 'How long does an engagement take?',
-    answer: 'The Delivery Clarity Sprint is designed to run for 7–10 days. Ongoing coordination is shaped around the size, urgency, and rhythm of the work rather than forced into a one-size-fits-all package.',
+    question: 'How long does the Delivery Clarity Sprint take?',
+    answer: 'The sprint takes 7–10 days. If you need help after that, we can talk about ongoing support based on the size and needs of the project.',
   },
   {
-    question: 'Do you work with teams outside Lagos?',
-    answer: 'Yes. RSM is based in Lagos, Nigeria and works remotely with teams where the communication rhythm and project context make remote delivery practical.',
+    question: 'Can you work with us if we are not in Lagos?',
+    answer: 'Yes. RSM is based in Lagos, Nigeria and can work remotely with startups and growing businesses in other locations.',
   },
   {
-    question: 'Do you only work on technology projects?',
-    answer: 'No. Software implementation is one area of focus, but the underlying work is broader: bringing clarity and follow-through to launches, strategic initiatives, and other important cross-functional projects.',
+    question: 'What kind of projects do you help with?',
+    answer: 'RSM helps with business launches, websites and software, new strategies, and other important projects that need clear steps, organised people, and regular follow-up.',
   },
 ]
 
@@ -27,8 +27,8 @@ export default function FAQ() {
       <div className="container faq-grid" data-reveal>
         <div>
           <div className="eyebrow"><span className="eyebrow-line" /> Before we talk</div>
-          <h2>Good questions make <em>better starts.</em></h2>
-          <p>If you still are not sure what to ask for, start with the problem that keeps making the work harder than it should be.</p>
+          <h2>Questions are a good place <em>to start.</em></h2>
+          <p>If you are not sure what kind of help you need, start by telling us what you are trying to do.</p>
         </div>
         <div className="faq-list">
           {questions.map((item, index) => {

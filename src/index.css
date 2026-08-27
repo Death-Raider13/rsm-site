@@ -431,3 +431,27 @@ img { display: block; max-width: 100%; }
   .sprint-page-aside strong { font-size: 30px; }
   .sprint-page-footer .container { display: grid; gap: 8px; }
 }
+
+/* Plain-language content additions */
+.example-section { background: var(--white); }
+.example-grid { display: grid; grid-template-columns: .35fr 1fr; gap: clamp(50px, 10vw, 150px); }
+.example-label { display: flex; flex-direction: column; justify-content: space-between; min-height: 285px; }
+.example-number { color: var(--blue); font-family: var(--font-mono); font-size: 9px; letter-spacing: .07em; }
+.example-copy { max-width: 760px; }
+.example-copy h2 { margin-top: 0; font-size: clamp(42px, 5.1vw, 67px); }
+.example-copy h2 em { color: var(--blue); }
+.example-lead { max-width: 690px; margin: 0; color: var(--navy); font-size: 18px; font-weight: 500; line-height: 1.6; }
+.example-result { display: grid; grid-template-columns: 110px 1fr; gap: 22px; margin-top: 37px; padding-top: 19px; border-top: 1px solid var(--line); }
+.example-result span { color: var(--blue); font-family: var(--font-mono); font-size: 9px; letter-spacing: .07em; text-transform: uppercase; }
+.example-result p { max-width: 580px; margin: 0; color: var(--muted); font-size: 15px; line-height: 1.6; }
+.founder-bio { max-width: 600px; margin: 0 0 18px; color: var(--muted); font-size: 15px; line-height: 1.65; }
+.team-callout { display: grid; grid-template-columns: .78fr 1.22fr; gap: clamp(40px, 8vw, 100px); align-items: start; margin-top: 88px; padding-top: 24px; border-top: 1px solid var(--line); }
+.team-callout h3 { max-width: 520px; margin: 0 0 14px; color: var(--navy); font-family: var(--font-display); font-size: clamp(29px, 3.8vw, 48px); letter-spacing: -.075em; line-height: 1; }
+.team-callout p { max-width: 620px; margin: 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
+@media (max-width: 980px) {
+  .example-grid, .team-callout { grid-template-columns: 1fr; gap: 28px; }
+  .example-label { min-height: auto; flex-direction: row; align-items: center; }
+}
+@media (max-width: 760px) {
+  .example-result { grid-template-columns: 1fr; gap: 10px; }
+}

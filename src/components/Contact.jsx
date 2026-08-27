@@ -36,8 +36,8 @@ export default function Contact() {
       <div className="container contact-grid" data-reveal>
         <div className="contact-copy">
           <div className="eyebrow eyebrow-light"><span className="eyebrow-line" /> Start a conversation</div>
-          <h2>Tell us what needs to <em>move.</em></h2>
-          <p>You do not need a perfect brief. Give us the context you have, and we will help you identify the right next step.</p>
+          <h2>Tell us what you need help <em>organising.</em></h2>
+          <p>You do not need a perfect plan before you contact us. Tell us what you are trying to do, and we will help you work out the next step.</p>
           <div className="contact-details">
             <a href={whatsappUrl(`Hi ${site.name}, I would like to discuss a project.`)} target="_blank" rel="noopener noreferrer"><span>WhatsApp</span>{site.phoneDisplay} <b aria-hidden="true">↗</b></a>
             <a href={`mailto:${site.email}`}><span>Email</span>{site.email} <b aria-hidden="true">↗</b></a>
@@ -50,13 +50,13 @@ export default function Contact() {
           <div className="form-grid">
             <label><span>Name <i>*</i></span><input name="name" type="text" value={form.name} onChange={updateField} placeholder="Your name" autoComplete="name" /></label>
             <label><span>Email <i>*</i></span><input name="email" type="email" value={form.email} onChange={updateField} placeholder="you@company.com" autoComplete="email" /></label>
-            <label><span>What are you working on?</span><select name="projectType" value={form.projectType} onChange={updateField}><option value="">Select one</option><option value="Business launch">Business launch</option><option value="Software implementation">Software implementation</option><option value="Strategy execution">Strategy execution</option><option value="Something else">Something else</option></select></label>
-            <label><span>When do you want to move?</span><select name="timing" value={form.timing} onChange={updateField}><option value="">Select one</option><option value="As soon as possible">As soon as possible</option><option value="This month">This month</option><option value="This quarter">This quarter</option><option value="Just exploring">Just exploring</option></select></label>
-            <label className="form-full"><span>What needs to move? <i>*</i></span><textarea name="summary" rows="4" value={form.summary} onChange={updateField} placeholder="A launch, software project, strategy, or something that has become difficult to coordinate..." /></label>
+            <label><span>What do you need help with?</span><select name="projectType" value={form.projectType} onChange={updateField}><option value="">Select one</option><option value="Business launch">Business launch</option><option value="Website or app">Website or app</option><option value="New strategy">New strategy</option><option value="Something else">Something else</option></select></label>
+            <label><span>When would you like to start?</span><select name="timing" value={form.timing} onChange={updateField}><option value="">Select one</option><option value="As soon as possible">As soon as possible</option><option value="This month">This month</option><option value="This quarter">This quarter</option><option value="Just exploring">Just exploring</option></select></label>
+            <label className="form-full"><span>Tell us what you are trying to do <i>*</i></span><textarea name="summary" rows="4" value={form.summary} onChange={updateField} placeholder="For example: I want to launch my online store, but I do not know what should happen first..." /></label>
           </div>
           {error && <p className="form-error" role="alert">{error}</p>}
-          <button className="button button-blue button-submit" type="submit">Continue on WhatsApp <span aria-hidden="true">↗</span></button>
-          <p className="form-note">Your message opens in WhatsApp with the details above. No long form, no pressure.</p>
+          <button className="button button-blue button-submit" type="submit">Send the details on WhatsApp <span aria-hidden="true">↗</span></button>
+          <p className="form-note">Your message opens in WhatsApp with the details above. No long form and no pressure.</p>
         </form>
       </div>
     </section>

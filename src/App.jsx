@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Problem from './components/Problem'
+import Example from './components/Example'
 import ClaritySprint from './components/ClaritySprint'
 import Services from './components/Services'
 import Process from './components/Process'
@@ -65,6 +66,7 @@ export default function App() {
       <main>
         <Hero />
         <Problem />
+        <Example />
         <ClaritySprint />
         <Services />
         <Process />

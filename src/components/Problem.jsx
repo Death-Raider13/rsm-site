@@ -1,18 +1,18 @@
 const problems = [
   {
     number: '01',
-    title: 'The plan exists, but progress is fuzzy.',
-    text: 'Everyone is busy, but the next decision, owner, or milestone is still unclear.',
+    title: 'You know what you want, but not what comes first.',
+    text: 'The goal is clear in your head, but the steps, order, and priorities are not clear yet.',
   },
   {
     number: '02',
-    title: 'Too many moving parts sit with one person.',
-    text: 'A founder or team lead is carrying coordination that the work itself cannot afford to lose.',
+    title: 'Different people are working, but they are not aligned.',
+    text: 'Tasks are spread across people, but nobody has one clear view of who is doing what and when.',
   },
   {
     number: '03',
-    title: 'Good intentions keep slipping past deadlines.',
-    text: 'Meetings happen, actions are agreed, and then follow-through disappears into the week.',
+    title: 'The work keeps waiting, even after the meetings.',
+    text: 'Actions are discussed, but tasks are not followed up and deadlines keep moving further away.',
   },
 ]
 
@@ -22,10 +22,10 @@ export default function Problem() {
       <div className="container">
         <div className="section-intro split-intro" data-reveal>
           <div>
-            <div className="eyebrow"><span className="eyebrow-line" /> You may need RSM if...</div>
-            <h2>Important work should not depend on <em>heroics.</em></h2>
+            <div className="eyebrow"><span className="eyebrow-line" /> The problem</div>
+            <h2>Good ideas get stuck<br /><em>when the work is not organised.</em></h2>
           </div>
-          <p>When delivery becomes harder than the work itself, an outside operating partner can give the team enough structure to regain momentum without adding unnecessary complexity.</p>
+          <p>You may need RSM if you know what you want to do, but do not know what should happen first. We organise the work, the people, and the follow-up so the idea can move towards completion.</p>
         </div>
         <div className="problem-grid" data-reveal>
           {problems.map((problem) => (

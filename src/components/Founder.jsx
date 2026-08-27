@@ -1,9 +1,9 @@
 import { site } from '../lib/site'
 
 const credentials = [
-  'Relevant experience — add here',
-  'Why Liana started RSM — add here',
-  'Professional background — add here',
+  'Computer Science student',
+  'Virtual assistance, project and product management',
+  '3D video editing and creative production',
 ]
 
 export default function Founder() {
@@ -17,15 +17,16 @@ export default function Founder() {
         </div>
         <div className="founder-copy">
           <div className="eyebrow"><span className="eyebrow-line" /> The person behind RSM</div>
-          <h2>Good work still needs someone to <em>hold the thread.</em></h2>
-          <p className="founder-lead">I’m Liana, founder of ResolveSync Management. RSM is being built for teams that need a thoughtful partner to help important work move from intention to execution.</p>
-          <p className="placeholder-note"><span>Biography in progress</span> This space will hold Liana’s relevant experience, professional background, and the story behind starting RSM. We are leaving it visible rather than filling it with generic claims.</p>
+          <h2>Helping good ideas become <em>finished work.</em></h2>
+          <p className="founder-lead">I’m Liana Odunayo, founder of ResolveSync Management. I help founders turn messy ideas and scattered work into organised, practical action.</p>
+          <p className="founder-bio">My experience spans virtual assistance, project and product management, and 3D video editing. I am naturally drawn to organising people, tools, and moving parts so that work becomes easier to understand and easier to complete.</p>
           <div className="founder-credentials">
             {credentials.map((credential, index) => <div key={credential}><span>0{index + 1}</span><strong>{credential}</strong></div>)}
           </div>
           <p className="founder-location">Based in {site.location} · Working with care, wherever the work is.</p>
         </div>
       </div>
+      <div className="container team-callout" data-reveal><div className="eyebrow"><span className="eyebrow-line" /> The team around the work</div><div><h3>A team built around what you need.</h3><p>RSM is led by Liana and supported by a growing team. Depending on the project, we bring together the right support across planning, organisation, operations, content, and technical implementation—so the work is not left hanging between different people.</p></div></div>
       <div className="container artifact-preview" data-reveal>
         <div className="artifact-copy"><div className="eyebrow"><span className="eyebrow-line" /> Sample working artifact</div><h3>A useful plan is a form of <em>trust.</em></h3><p>Here is the kind of clarity a client should be able to take away: a simple view of the outcome, the moving parts, the next decision, and who owns it.</p><a className="text-link" href="/delivery-clarity-sprint">See the sprint details <span aria-hidden="true">↗</span></a></div>
         <div className="artifact-board" aria-label="Sample project clarity worksheet">

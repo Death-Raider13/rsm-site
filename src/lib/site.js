@@ -15,8 +15,8 @@ export function whatsappUrl(message = defaultWhatsAppMessage) {
 }
 
 export const navLinks = [
-  { label: 'The problem', href: '#problem' },
-  { label: 'The sprint', href: '#sprint' },
-  { label: 'How it works', href: '#process' },
-  { label: 'About RSM', href: '#about' },
+  { label: 'How we help', href: '#services' },
+  { label: 'Get started', href: '#sprint' },
+  { label: 'Our process', href: '#process' },
+  { label: 'About Liana', href: '#founder' },
 ]

@@ -3,24 +3,24 @@ import { whatsappUrl, site } from '../lib/site'
 const services = [
   {
     number: '01',
-    tag: 'Launch coordination',
-    title: 'Move the launch.',
-    text: 'Turn a new offer, programme, or business idea into a coordinated launch plan with priorities, owners, and a visible path to go-live.',
-    deliverable: 'Launch plan + delivery rhythm',
+    tag: 'Launching a business',
+    title: 'Get ready to launch.',
+    text: 'We help you list what needs to be done, decide what comes first, organise the people involved, and keep the launch moving until you are ready to go live.',
+    deliverable: 'Launch plan + task list',
   },
   {
     number: '02',
-    tag: 'Implementation support',
-    title: 'Make the system useful.',
-    text: 'Align requirements, people, handoffs, and decisions so a software or process implementation actually works in the day-to-day.',
-    deliverable: 'Requirements map + handoff plan',
+    tag: 'Website or software project',
+    title: 'Build it without the confusion.',
+    text: 'We help organise the people, tasks, content, decisions, and timelines needed to build a website, app, or other digital system.',
+    deliverable: 'Project plan + follow-up',
   },
   {
     number: '03',
-    tag: 'Strategy execution',
-    title: 'Keep the promise moving.',
-    text: 'Translate agreed strategy into accountable actions, milestones, and a practical operating rhythm that survives the busy weeks.',
-    deliverable: 'Execution roadmap + check-ins',
+    tag: 'An important project',
+    title: 'Turn the plan into action.',
+    text: 'We break the strategy or project into clear actions, help people stay aligned, follow up on the work, and keep timelines in view.',
+    deliverable: 'Action plan + progress check-ins',
   },
 ]
 
@@ -32,10 +32,10 @@ export default function Services() {
       <div className="container">
         <div className="section-intro services-heading" data-reveal>
           <div>
-            <div className="eyebrow"><span className="eyebrow-line" /> What RSM can own</div>
-            <h2>Less “support.”<br /><em>More forward motion.</em></h2>
+            <div className="eyebrow"><span className="eyebrow-line" /> How we help</div>
+            <h2>We organise the work<br /><em>behind your idea.</em></h2>
           </div>
-          <p>Choose the kind of momentum your team needs now. Each engagement is shaped around a real outcome, not a vague promise to be available.</p>
+          <p>Whether you are launching a business, building a website or app, running a new strategy, or completing an important project, we help make the work easier to understand and easier to finish.</p>
         </div>
         <div className="service-grid" data-reveal>
           {services.map((service) => (
