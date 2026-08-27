@@ -455,3 +455,26 @@ img { display: block; max-width: 100%; }
 @media (max-width: 760px) {
   .example-result { grid-template-columns: 1fr; gap: 10px; }
 }
+
+/* Text-led founder profile */
+.founder-heading { display: flex; justify-content: space-between; align-items: end; gap: 35px; padding-bottom: 25px; border-bottom: 1px solid var(--line); }
+.founder-heading-note { max-width: 330px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.55; text-align: right; }
+.founder-profile { display: grid; grid-template-columns: .72fr 1.28fr; gap: clamp(50px, 9vw, 130px); align-items: center; padding-top: 60px; }
+.founder-profile-card { position: relative; display: flex; flex-direction: column; justify-content: space-between; min-height: 420px; padding: 28px; overflow: hidden; color: var(--white); background: var(--navy); box-shadow: 16px 16px 0 rgba(20,88,212,.13); }
+.founder-profile-card::before { content: ''; position: absolute; width: 330px; height: 330px; right: -150px; top: 50px; border: 1px solid rgba(134,181,255,.34); border-radius: 50%; box-shadow: 0 0 0 25px rgba(134,181,255,.06), 0 0 0 50px rgba(134,181,255,.05); }
+.profile-card-top { position: relative; z-index: 1; display: flex; justify-content: space-between; gap: 20px; color: rgba(255,255,255,.54); font-family: var(--font-mono); font-size: 9px; letter-spacing: .06em; text-transform: uppercase; }
+.profile-monogram { position: relative; z-index: 1; align-self: center; margin: auto 0; color: #8bb9ff; font-family: var(--font-display); font-size: clamp(90px, 13vw, 165px); font-weight: 700; letter-spacing: -.15em; line-height: .8; }
+.profile-card-bottom { position: relative; z-index: 1; display: grid; gap: 6px; padding-top: 19px; border-top: 1px solid var(--line-light); }
+.profile-card-bottom strong { color: var(--white); font-family: var(--font-display); font-size: 20px; letter-spacing: -.05em; }
+.profile-card-bottom span { color: rgba(255,255,255,.56); font-size: 11px; }
+.profile-card-bottom span:last-child { color: #8bb9ff; font-family: var(--font-mono); font-size: 9px; letter-spacing: .05em; text-transform: uppercase; }
+.founder-profile .founder-copy h2 { margin-top: 0; }
+@media (max-width: 980px) {
+  .founder-profile { grid-template-columns: 1fr; }
+  .founder-profile-card { max-width: 560px; min-height: 350px; }
+}
+@media (max-width: 760px) {
+  .founder-heading { display: grid; gap: 18px; align-items: start; }
+  .founder-heading-note { text-align: left; }
+  .founder-profile-card { min-height: 320px; padding: 22px; }
+}
